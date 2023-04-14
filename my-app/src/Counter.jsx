@@ -1,12 +1,14 @@
-import React from 'react'
+import React,{useState} from 'react'
 
- function counter( props) {
+ function Counter() {
+  const [count, setCount]=useState(0);
   
     return(
      <div>
-       <h2>  name:{props.name} age:{props.age} job:{props.job} </h2>
+      <h3 onClick={()=>setCount(count+1)}>hello</h3>
+       <h2 >  Hello, my name is fibin johnson:{count} </h2>
      </div>)
   
  }
 
- export default counter
+ export default Counter
